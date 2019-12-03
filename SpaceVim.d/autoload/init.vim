@@ -1,4 +1,10 @@
-function! bcrypt#before() abort
+function! init#before() abort
+  let g:vimwiki_global_ext = 1
+  let g:vimwiki_ext2syntax = {'.md':'markdown',
+                          \ '.mkd':'markdown',
+                          \ '.wiki':'media'}
+  let g:vimwiki_list = [{'path':'~/documents','syntax':'markdown','ext':'.md'}]
+
   augroup CPT
     au BufReadPre *.cpt set bin
     au BufReadPre *.cpt set viminfo=
@@ -11,6 +17,6 @@ function! bcrypt#before() abort
     au BufWritePost *.cpt silent! u
     au BufWritePost *.cpt set nobin
   augroup END
-endfunction
 
+endfunction
 

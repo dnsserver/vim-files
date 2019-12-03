@@ -27,7 +27,7 @@
     filemanager = "nerdtree"
     filetree_direction = "left"
 
-    bootstrap_before = "bcrypt#before"
+    bootstrap_before = "init#before"
 
 # Enable autocomplete layer
 [[layers]]
