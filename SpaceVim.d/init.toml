@@ -79,4 +79,4 @@ name = 'git'
 
 [[custom_plugins]]
 name="vimwiki/vimwiki.git"
-merge=0
+merged=0
